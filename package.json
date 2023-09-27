@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "paper-css": "^0.4.1",
+    "papercss": "^1.9.2"
+  }
+}
