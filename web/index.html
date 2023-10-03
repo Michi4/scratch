@@ -14,7 +14,6 @@
 
   <body>
     <div class="paper container" id="printable">
-      <h1>Some Fresh Title</h1>
       <table>
         <tr>
           <th>Gerät (Nr.)</th>
@@ -29,37 +28,21 @@
           <th>araphe Lehrkraft</th>
           <th>Anmerkungen</th>
         </tr>
-        <tr>
-          <td>Alfreds Futterkiste</td>
-          <td>Maria Anders</td>
-          <td>Germany</td>
-        </tr>
-        <tr>
-          <td>Centro comercial Moctezuma</td>
-          <td>Francisco Chang</td>
-          <td>Mexico</td>
-        </tr>
-        <tr>
-          <td>Ernst Handel</td>
-          <td>Roland Mendel</td>
-          <td>Austria</td>
-        </tr>
-        <tr>
-          <td>Island Trading</td>
-          <td>Helen Bennett</td>
-          <td>UK</td>
-        </tr>
-        <tr>
-          <td>Laughing Bacchus Winecellars</td>
-          <td>Yoshi Tannamuri</td>
-          <td>Canada</td>
-        </tr>
-        <tr>
-          <td>Magazzini Alimentari Riuniti</td>
-          <td>Giovanni Rovelli</td>
-          <td>Italy</td>
-        </tr>
+        <tbody id="table-body"></tbody>
       </table>
     </div>
+    <script>
+      // JavaScript code to repeat the <tr> 30 times
+      const tableBody = document.getElementById("table-body");
+
+      for (let i = 0; i < 30; i++) {
+        const newRow = document.createElement("tr");
+        for (let j = 0; j < 11; j++) {
+          const newCell = document.createElement("td");
+          newRow.appendChild(newCell);
+        }
+        tableBody.appendChild(newRow);
+      }
+    </script>
   </body>
 </html>
